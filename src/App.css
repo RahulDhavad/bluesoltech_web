@@ -1,1 +1,13 @@
-
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.8); /* Initial background color */
+    backdrop-filter: blur(10px); /* Initial blur effect */
+    transition: background-color 0.3s ease, backdrop-filter 0.3s ease;
+  }
+  .navbar.scrolled {
+    background-color: transparent; /* Background becomes transparent on scroll */
+    backdrop-filter: blur(20px); /* Increase blur on scroll */
+  }

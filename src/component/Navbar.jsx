@@ -36,6 +36,9 @@ const Navbar = () => {
                     <div className="text-black text-base self-center my-auto">
                     <Link to="services">  SERVICE </Link>
                     </div>
+                    <div className="text-black text-base self-center my-auto">
+                    <Link to="team">  TEAM </Link>
+                    </div>
                     <span className="text-white text-base whitespace-nowrap bg-blue-600 self-stretch grow justify-center items-stretch px-8 py-5 rounded-[30px] max-md:px-5">
                         GET STARTED
                     </span>
