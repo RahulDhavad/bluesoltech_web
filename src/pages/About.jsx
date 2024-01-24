@@ -1,14 +1,14 @@
 import React from "react";
+import Hero from "../component/Hero";
+import img2 from '../assets/img/earth-seen-from-space_720.jpg';
 
 const About = () => {
   return (
     <>
+    <Hero title="About Our Company" subtitle=" About" imagePath={img2} />
       <div className="flex justify-center align-center">
         <div className="w-4/5">
-          <div className="flex max-md:max-w-full h-60 margin-auto justify-center items-center">
-            <h1 className="text-wrap font-bold text-8xl">About Us</h1>
-          </div>
-          <div className="flex max-md:max-w-full h-20 margin-auto justify-around items-center flex-col">
+          <div className="flex max-md:max-w-full h-20 margin-auto justify-around items-center flex-col mt-6">
             <h3 className="text-wrap font-bold text-4xl">About Us</h3>
             <p className="text-base text-gray-600 tracking-widest">
               Change the way the best IT Solution
