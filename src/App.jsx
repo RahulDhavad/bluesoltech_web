@@ -8,13 +8,14 @@ import About from "./pages/About";
 function App() {
   return (
     <>
-      <About />
 
-      {/* <Nav />
+      <About />
+      <Nav />
       <Hero />
       <Cards />
       <Work />
-      <Footer /> */}
+      <Footer />
+      <Layout/>
     </>
   );
 }
