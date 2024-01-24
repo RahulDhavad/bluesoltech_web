@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 
 const Cards = () => {
   return (
@@ -253,11 +253,9 @@ const Cards = () => {
             </div>
           </div>
         </div>{" "}
-      
       </span>{" "}
-    
     </>
-  )
-}
+  );
+};
 
-export default Cards
+export default Cards;

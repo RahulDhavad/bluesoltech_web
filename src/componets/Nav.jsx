@@ -1,9 +1,9 @@
-import React from 'react'
+import React from "react";
 
 const Nav = () => {
   return (
     <>
-    <div className="backdrop-blur-[2px] bg-black bg-opacity-10 flex w-full items-stretch justify-between gap-5 pl-9 pr-12 py-8 max-md:max-w-full max-md:flex-wrap max-md:px-5">
+      <div className="backdrop-blur-[2px] bg-black bg-opacity-10 flex w-full items-stretch justify-between gap-5 pl-9 pr-12 py-8 max-md:max-w-full max-md:flex-wrap max-md:px-5">
         <img
           loading="lazy"
           srcSet="https://cdn.builder.io/api/v1/image/assets/TEMP/f963ef648f2bb5300f330ce8b6335489cc7781ac0d63053793da644b6baa13de?apiKey=7b31b7140b444c699f3522e50f1c6b97&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/f963ef648f2bb5300f330ce8b6335489cc7781ac0d63053793da644b6baa13de?apiKey=7b31b7140b444c699f3522e50f1c6b97&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/f963ef648f2bb5300f330ce8b6335489cc7781ac0d63053793da644b6baa13de?apiKey=7b31b7140b444c699f3522e50f1c6b97&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/f963ef648f2bb5300f330ce8b6335489cc7781ac0d63053793da644b6baa13de?apiKey=7b31b7140b444c699f3522e50f1c6b97&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/f963ef648f2bb5300f330ce8b6335489cc7781ac0d63053793da644b6baa13de?apiKey=7b31b7140b444c699f3522e50f1c6b97&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/f963ef648f2bb5300f330ce8b6335489cc7781ac0d63053793da644b6baa13de?apiKey=7b31b7140b444c699f3522e50f1c6b97&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/f963ef648f2bb5300f330ce8b6335489cc7781ac0d63053793da644b6baa13de?apiKey=7b31b7140b444c699f3522e50f1c6b97&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/f963ef648f2bb5300f330ce8b6335489cc7781ac0d63053793da644b6baa13de?apiKey=7b31b7140b444c699f3522e50f1c6b97&"
@@ -25,7 +25,7 @@ const Nav = () => {
         </span>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default Nav
+export default Nav;

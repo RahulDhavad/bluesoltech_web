@@ -1,14 +1,14 @@
-import React from 'react'
+import React from "react";
 
 const Hero = () => {
   return (
     <>
-       <span className="flex w-full flex-col mt-80 px-16 max-md:max-w-full max-md:mt-10 max-md:px-5">
+      <span className="flex w-full flex-col mt-80 px-16 max-md:max-w-full max-md:mt-10 max-md:px-5">
         <div className="text-black text-9xl font-bold max-w-[1399px] self-center max-md:max-w-full max-md:text-4xl">
           Lorem Ipsum is simply <br /> dummy text of the
           <br /> printing{" "}
         </div>
-        <div className="bg-emerald-600 self-stretch mt-96 pb-12 px-12 rounded-[30px] max-md:max-w-full max-md:mt-10 max-md:px-5">
+        <div className="bg-emerald-600 self-stretch mt-96 pb-12 px-12 rounded-[30px] max-md:max-w-80 max-md:mt-10 max-md:px-5">
           <div className="gap-5 flex max-md:flex-col max-md:items-stretch max-md:gap-0">
             <div className="flex flex-col items-stretch w-[64%] max-md:w-full max-md:ml-0">
               <div className="z-[1] flex flex-col items-stretch mt-6 max-md:max-w-full max-md:mt-10">
@@ -45,16 +45,22 @@ const Hero = () => {
           </div>
         </div>
         <div className="self-stretch mt-14 max-md:max-w-full max-md:mt-10">
-          <div className="gap-5 flex max-md:flex-col max-md:items-stretch max-md:gap-0">
-            <div className="flex flex-col items-stretch w-6/12 max-md:w-full max-md:ml-0">
+          <div className="flex max-md:flex-col max-md:items-stretch max-md:gap-0">
+            <div className="flex flex-col items-stretch w-10/12 max-md:w-full max-md:ml-0">
               <span className="bg-pink-950 flex grow flex-col w-full pl-12 py-12 rounded-[30px] items-end max-md:max-w-full max-md:mt-10 max-md:pl-5">
                 <div className="text-white text-6xl font-extrabold mt-24 self-start max-md:max-w-full max-md:text-4xl max-md:mt-10">
-                  Lorem Ipsum
+                  Web Development
                 </div>
-                <div className="text-white text-5xl font-extrabold mt-24 self-start max-md:max-w-full max-md:text-4xl max-md:mt-10">
-                  Lorem Ipsum is simply <br />
-                  dummytextof the printing
-                  <br /> and typesetting
+                <div className="text-white font-bold mt-24 self-start max-md:max-w-full max-md:text-4xl max-md:mt-10">
+                  Web development is the process of creating websites and web
+                  applications for the internet. It encompasses a diverse set of
+                  tasks, including front-end development that focuses on the
+                  user interface and experience using HTML, CSS, and JavaScript,
+                  back-end development involving server-side logic and database
+                  management with languages like Node.js, Python, or PHP, and
+                  full-stack development combining both aspects. Databases like
+                  MySQL and MongoDB store and retrieve data, while servers and
+                  web hosting services ensure accessibility.
                 </div>
                 <img
                   loading="lazy"
@@ -63,15 +69,28 @@ const Hero = () => {
                 />
               </span>
             </div>
-            <div className="flex flex-col items-stretch w-6/12 ml-5 max-md:w-full max-md:ml-0">
-              <span className="bg-violet-900 flex grow flex-col w-full pl-16 pr-20 py-12 rounded-[30px] items-start max-md:max-w-full max-md:mt-10 max-md:px-5">
+            <div className="flex flex-col items-stretch w-1/12 ml-5 max-md:w-full max-md:ml-0">
+              <span className="bg-violet-900 flex grow flex-col w-full pl-16 pr-20 py-12 rounded-[30px] items-start max-md:max-w-full max-md:mt-10 max-md:px-5  text-overflow: clip">
                 <div className="text-white text-6xl font-extrabold mt-20 max-md:max-w-full max-md:text-4xl max-md:mt-10">
-                  Lorem Ipsum
+                  App Development
                 </div>
-                <div className="text-white text-5xl font-extrabold max-w-[526px] mt-28 mb-80 max-md:max-w-full max-md:text-4xl max-md:my-10">
-                  Lorem Ipsum is simply <br />
-                  dummytextof the printing
-                  <br /> and typesetting
+                <div className="text-white font-bold max-w-[526px] mt-28 mb-80 max-md:max-w-full max-md:text-4xl max-md:my-10">
+                  Mobile apps are typically developed for specific operating
+                  systems, such as iOS (Apple) and Android. Developers often use
+                  languages like Swift or Objective-C for iOS and Java or Kotlin
+                  for Android.
+                </div>
+              </span>
+            </div>
+            <div className="flex flex-col items-stretch w-1/12 ml-5 max-md:w-full max-md:ml-0">
+              <span className="bg-violet-900 flex grow flex-col w-full pl-16 pr-20 py-12 rounded-[30px] items-start max-md:max-w-full max-md:mt-10 max-md:px-5 text-overflow: clip">
+                <div className="text-white text-6xl font-extrabold mt-20 max-md:max-w-full max-md:text-4xl max-md:mt-10">
+                  Graphic Design
+                </div>
+                <div className="text-white font-bold max-w-[526px] mt-28 mb-80 max-md:max-w-full max-md:text-4xl max-md:my-10 text-wrap">
+                  Graphic designers work with visual elements such as images,
+                  illustrations, icons, colors, and shapes to create a visually
+                  cohesive and aesthetically pleasing design.
                 </div>
               </span>
             </div>
@@ -173,7 +192,7 @@ const Hero = () => {
         </span>
       </div>{" "}
     </>
-  )
-}
+  );
+};
 
-export default Hero
+export default Hero;
