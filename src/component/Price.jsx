@@ -3,11 +3,11 @@ import React from 'react'
 
 const Price = () => {
   return (
-    <div class="container mx-auto">
+    <div class="container mx-auto justify-center ">
     <div class="mb-8 mt-8">
-      <h3 class="text-8xl font-semibold tracking-tight text-gray-900 dark:text-white font-large text-center">Price</h3>
+      <h3 class="text-8xl font-semibold tracking-tight text-gray-900 dark:text-white font-large text-center justify-center">Price</h3>
     </div>
-      <div className='flex flex-col sm:flex-row justify-center gap-28 mt-[74px]'>
+      <div className='flex flex-col  xl:flex-row justify-center gap-28 mt-[74px]'>
         <div class="w-full max-w-sm p-4 bg-[#252424] border border-gray-200 rounded-lg shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700 transition duration-300 ease-in-out transform hover:scale-105 hover:bg-black">
           <h5 class="mb-4 text-xl font-medium text-white  dark:text-white-600 text-center">Standard plan</h5>
           <div class="flex items-baseline text-white-900 dark:text-white text-center">

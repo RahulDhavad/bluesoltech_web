@@ -1,55 +1,159 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from "react";
+import { Transition } from "@headlessui/react";
 import { useSpring, animated } from 'react-spring';
 import '../App.css';
 import { Link } from 'react-router-dom';
+import { Button } from "@material-tailwind/react";
 const Navbar = () => {
-    const [isScrolled, setIsScrolled] = useState(false);
 
-    useEffect(() => {
-        const handleScroll = () => {
-            const scrollTop = window.scrollY;
-            setIsScrolled(scrollTop > 0);
-        };
-
-        window.addEventListener('scroll', handleScroll);
-        return () => {
-            window.removeEventListener('scroll', handleScroll);
-        };
-    }, []);
-
-    const navbarAnimation = useSpring({
-        backgroundColor: isScrolled ? 'rgba(255, 255, 255, 0)' : 'rgba(255, 255, 255, 0.8)',
-        backdropFilter: isScrolled ? 'blur(20px)' : 'blur(10px)',
-    });
-
+    const [isOpen, setIsOpen] = useState(false);
     return (
-        <animated.div style={navbarAnimation} className={`navbar z-[999] p-0 m-0 ${isScrolled ? 'scrolled fixed top-0 left-0 right-0' : ''}`}>
-            <div className="bg-black bg-opacity-10 flex items-stretch justify-between px-9 py-8 md:px-5">
-                <img
-                    loading="lazy"
-                    srcSet="..."
-                    className="aspect-square object-contain object-center w-[58px] overflow-hidden shrink-0 max-w-full"
-                    alt="Logo"
-                />
-                <span className="flex items-start justify-between gap-5 mt-1.5 self-start max-md:max-w-full max-md:flex-wrap">
-                    <div className="text-black text-base self-center whitespace-nowrap my-auto">
-                      <Link to="/"> HOME </Link>
+        <div>
+            <nav className="bg-[#ececec]">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div className="flex items-center justify-between h-16">
+                        <div className="flex items-center">
+                            <div className="flex-shrink-0">
+                                <img
+                                    className="h-8 w-8"
+                                    src="https://tailwindui.com/img/logos/workflow-mark-indigo-500.svg"
+                                    alt="Workflow"
+                                />
+                            </div>
+                            <div className="hidden md:block">
+                                <div className="ml-10 flex items-baseline space-x-4">
+                                    <a
+                                        href="#"
+                                        className=" hover:bg-gray-700  px-3 py-2 rounded-md text-sm font-medium"
+                                    >
+                                         <Link to="/">Home </Link>
+                                    </a>
+
+                                    <a
+                                        href="#"
+                                        className=" hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                                    >
+                                        <Link to="/about">About</Link>
+                                    </a>
+
+                                    <a
+                                        href="#"
+                                        className=" hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                                    >
+                                       <Link to="/services"> Services </Link>
+                                    </a>
+
+                                    <a
+                                        href="#"
+                                        className=" hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                                    >
+                                        <Link to="/team">Team</Link>
+                                    </a>
+                             
+                                </div>
+                            </div>
+                        </div>
+                        <div className="-mr-2 flex md:hidden">
+                            <button
+                                onClick={() => setIsOpen(!isOpen)}
+                                type="button"
+                                className="bg-gray-900 inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
+                                aria-controls="mobile-menu"
+                                aria-expanded="false"
+                            >
+                                <span className="sr-only">Open main menu</span>
+                                {!isOpen ? (
+                                    <svg
+                                        className="block h-6 w-6"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        fill="none"
+                                        viewBox="0 0 24 24"
+                                        stroke="currentColor"
+                                        aria-hidden="true"
+                                    >
+                                        <path
+                                            strokeLinecap="round"
+                                            strokeLinejoin="round"
+                                            strokeWidth="2"
+                                            d="M4 6h16M4 12h16M4 18h16"
+                                        />
+                                    </svg>
+                                ) : (
+                                    <svg
+                                        className="block h-6 w-6"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        fill="none"
+                                        viewBox="0 0 24 24"
+                                        stroke="currentColor"
+                                        aria-hidden="true"
+                                    >
+                                        <path
+                                            strokeLinecap="round"
+                                            strokeLinejoin="round"
+                                            strokeWidth="2"
+                                            d="M6 18L18 6M6 6l12 12"
+                                        />
+                                    </svg>
+                                )}
+                            </button>
+                        </div>
                     </div>
-                    <div className="text-black text-base self-center my-auto">
-                      <Link to="about"> ABOUT US </Link>
-                    </div>
-                    <div className="text-black text-base self-center my-auto">
-                      <Link to="services"> SERVICE </Link>
-                    </div>
-                    <div className="text-black text-base self-center my-auto">
-                      <Link to="team"> TEAM </Link>
-                    </div>
-                    <span className="text-white text-base whitespace-nowrap bg-blue-600 self-stretch grow justify-center items-stretch px-8 py-5 rounded-[30px] max-md:px-5">
-                        GET STARTED
-                    </span>
-                </span>
-            </div>
-        </animated.div>
+                </div>
+
+                <Transition
+                    show={isOpen}
+                    enter="transition ease-out duration-100 transform"
+                    enterFrom="opacity-0 scale-95"
+                    enterTo="opacity-100 scale-100"
+                    leave="transition ease-in duration-75 transform"
+                    leaveFrom="opacity-100 scale-100"
+                    leaveTo="opacity-0 scale-95"
+                >
+                    {(ref) => (
+                        <div className="md:hidden" id="mobile-menu">
+                            <div ref={ref} className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                                <a
+                                    href="#"
+                                    className="hover:bg-gray-700 text-white block px-3 py-2 rounded-md text-base font-medium"
+                                >
+                                   <Link to="/">Home </Link>
+                                </a>
+
+                                <a
+                                    href="#"
+                                    className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                                >
+                                    <Link to="/about">About</Link>
+                                </a>
+
+                                <a
+                                    href="#"
+                                    className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                                >
+                                    <Link to="/services"> Services </Link>
+                                </a>
+
+                                <a
+                                    href="#"
+                                    className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                                >
+                                   <Link to="/team">Team</Link>
+                                </a>
+
+                                <a
+                                    href="#"
+                                    className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                                >
+                                    Reports
+                                </a>
+                            </div>
+                        </div>
+                    )}
+                </Transition>
+            </nav>
+
+        </div>
     );
+
 };
 export default Navbar;
