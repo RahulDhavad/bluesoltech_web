@@ -4,6 +4,7 @@ import Home from "../Pages/Home";
 import Services from "../Pages/Services";
 import Teammember from "../Pages/Teammember";
 import About from "../component/About";
+import Get from "../Pages/Get";
 
 const Routers = () => {
   return (
@@ -11,6 +12,7 @@ const Routers = () => {
       <Route path="/" element={<Home />} />
       <Route path="/services" element={<Services />} />
       <Route path="/team" element={<Teammember />} />
+      <Route path="/contact" element={<Get />} />
     </Routes>
   );
 };

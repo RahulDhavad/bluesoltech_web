@@ -27,7 +27,7 @@ const Home = () => {
               <p className="text-2xl text-center md:text-3xl md:text-start lg:text-5xl text-white p-2 transition-all duration-300 hover:rotate-[-2deg]">
                 Solution to your digital Problems
               </p>
-              <p className="text-sm text-center text-gray-500 py-4 w-full md:text-xl md:text-start md:flex md:justify-start transition-all duration-300 hover:rotate-[-2deg]">
+              <p className="text-sm text-center text-gray-500 py-4 w-full md:text-xl md:text-start md:flex md:justify-start transition-all duration-300 hover:rotate-[-2deg]git">
                 10 YEARS OF EXPERIENCE IN OUTSOURCING
               </p>
             </div>

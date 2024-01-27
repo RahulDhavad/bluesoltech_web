@@ -1,20 +1,23 @@
 import React, { useState } from "react";
 import { Transition } from "@headlessui/react";
-import { useSpring, animated } from "react-spring";
-import img6 from "../assets/img/contactbg.png";
 import { Link } from "react-router-dom";
 import logo from "../assets/img/logonew.png";
-import { IoIosCloseCircle } from "react-icons/io";
+import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isPopupOpen, setPopupOpen] = useState(false);
+  const navigate = useNavigate();
 
   const scrollToAbout = () => {
     const aboutPageElement = document.getElementById("about_page");
     if (aboutPageElement) {
       aboutPageElement.scrollIntoView({ behavior: "smooth" });
     }
+  };
+
+  const handleContact = () => {
+    navigate("/contact");
   };
   return (
     <div>
@@ -57,7 +60,10 @@ const Navbar = () => {
                     </Link>
                   </div>
 
-                  <button className="bg-gray-700 text-white px-4 py-2 rounded-md text-sm font-medium ml-[45rem]">
+                  <button
+                    onClick={handleContact}
+                    className="bg-gray-700 text-white px-4 py-2 rounded-md text-sm font-medium ml-[45rem]"
+                  >
                     Contact Us
                   </button>
                 </div>
