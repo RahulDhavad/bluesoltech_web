@@ -6,7 +6,7 @@ import img3 from '../assets/img/human-brain-detailed-structure.jpg';
 
 const Services = () => {
   return (
-    <div className=' px-4 !overflow-y-hidden'>
+    <div className='!overflow-y-hidden'>
       <Hero title="Our Services" subtitle=" Service" imagePath={img3} />
       <Servicecont/>
       <Servicestype/>

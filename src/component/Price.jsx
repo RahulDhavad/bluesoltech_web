@@ -1,13 +1,34 @@
 import React from 'react'
+import { motion } from "framer-motion";
 
 
-const Price = () => {
+
+const Price = (index) => {
   return (
     <div class="container mx-auto justify-center ">
-    <div class="mb-8 mt-8">
-      <h3 class="text-8xl font-semibold tracking-tight text-gray-900 dark:text-white font-large text-center justify-center">Price</h3>
-    </div>
-      <div className='flex flex-col  xl:flex-row justify-center gap-28 mt-[74px]'>
+      <div class="mb-8 mt-8">
+        <motion.div
+          className="card"
+          initial={{
+            opacity: 0,
+            // if odd index card, slide from right instead of left
+            y: index % 2 === 0 ? -50 : 50
+          }}
+          whileInView={{
+            opacity: 1,
+            y: 0, // Slide in to its original position
+            transition: {
+              duration: 1 // Animation duration
+            }
+          }}
+          viewport={{ once: true }}
+        >
+          <h5 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-center text-gray-600">
+            Price</h5>
+
+        </motion.div>
+      </div>
+      <div className='flex flex-col  xl:flex-row justify-center gap-8 mt-[74px]'>
         <div class="w-full max-w-sm p-4 bg-[#252424] border border-gray-200 rounded-lg shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700 transition duration-300 ease-in-out transform hover:scale-105 hover:bg-black">
           <h5 class="mb-4 text-xl font-medium text-white  dark:text-white-600 text-center">Standard plan</h5>
           <div class="flex items-baseline text-white-900 dark:text-white text-center">
