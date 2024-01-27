@@ -64,12 +64,17 @@ const Navbar = () => {
                                     </a>
                                     <div className="flex">
                                         <button
-                                            className="bg-gray-700 text-white px-4 py-2 rounded-md text-sm font-medium ml-[45rem]"
+                                            className="bg-gray-700 text-white px-4 py-2 mx-2 rounded-md text-sm font-medium ml-[30rem]"
                                             onClick={handleButtonClick}
                                         >
                                             Contact Us
                                         </button>
+                                        <button
+                                            className="bg-gray-700 text-white px-4 py-2 mx-2 rounded-md text-sm font-medium "
 
+                                        >
+                                            <Link to="/Get">  Get started </Link>
+                                        </button>
 
                                     </div>
                                 </div>
@@ -143,12 +148,12 @@ const Navbar = () => {
                                 </a>
 
                                 <a
-                                        href="#"
-                                        className="text-black hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-                                        onClick={scrollToAbout}
-                                    >
-                                        About
-                                    </a>
+                                    href="#"
+                                    className="text-black hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                                    onClick={scrollToAbout}
+                                >
+                                    About
+                                </a>
 
                                 <a
                                     href="#"
@@ -166,10 +171,16 @@ const Navbar = () => {
 
                                 <div className="flex ">
                                     <button
-                                        className="bg-blue-500 text-white px-4 py-2 rounded-md text-sm font-medium "
+                                        className="bg-gray-700 p-8 text-white mx-2 px-4 py-2 rounded-md text-sm font-medium "
                                         onClick={handleButtonClick}
                                     >
                                         Contact Us
+                                    </button>
+                                    <button
+                                        className="bg-gray-700 p-8 text-white px-4  mx-2 py-2 rounded-md text-sm font-medium "
+
+                                    >
+                                        Get started
                                     </button>
                                 </div>
                             </div>

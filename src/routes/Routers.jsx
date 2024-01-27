@@ -4,6 +4,7 @@ import Home from '../Pages/Home';
 import Services from '../Pages/Services';
 import Teammember from '../Pages/Teammember';
 import About from '../component/About';
+import Get from '../Pages/Get';
 
 
 const Routers = () => {
@@ -13,6 +14,7 @@ const Routers = () => {
         <Route path="/About" element={<About/>}/>
         <Route path="/services" element={<Services/>}/>
         <Route path='/team' element={<Teammember/>}/>
+        <Route path='/Get' element={<Get/>}/>
         
     </Routes>
   )
