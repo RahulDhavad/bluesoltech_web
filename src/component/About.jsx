@@ -55,6 +55,7 @@ const About = (index) => {
                   duration: 1 // Animation duration
                 }
               }}
+              viewport={{ once: true }}
             >
               <img
                 className="object-cover w-full h-64 lg:h-full"
@@ -79,6 +80,7 @@ const About = (index) => {
                   duration: 1 // Animation duration
                 }
               }}
+              viewport={{ once: true }}
             >
               <h1 className="text-2xl lg:text-3xl xl:text-4xl font-bold mb-4 text-gray-600">
                 The Best IT Solution
@@ -150,6 +152,7 @@ const About = (index) => {
                     duration: 1 // Animation duration
                   }
                 }}
+                viewport={{ once: true }}
 
               >
                 {/* Left side content */}
@@ -184,7 +187,7 @@ const About = (index) => {
                       duration: 1 // Animation duration
                     }
                   }}
-
+                  viewport={{ once: true }}
                 >
                   <img
                     className='h-auto object-cover'
@@ -211,6 +214,7 @@ const About = (index) => {
                     duration: 1 // Animation duration
                   }
                 }}
+                viewport={{ once: true }}
 
               >
                 {/* Left side content */}
@@ -247,7 +251,7 @@ const About = (index) => {
                       duration: 1 // Animation duration
                     }
                   }}
-
+                  viewport={{ once: true }}
                 >
                   <img
                     className='h-auto object-cover'
@@ -274,7 +278,7 @@ const About = (index) => {
                     duration: 1 // Animation duration
                   }
                 }}
-
+                viewport={{ once: true }}
               >
                 {/* Left side content */}
                 <div className='w-full sm:w-[550px] p-4 sm:p-10'>
@@ -310,7 +314,7 @@ const About = (index) => {
                       duration: 1 // Animation duration
                     }
                   }}
-
+                  viewport={{ once: true }}
                 >
                   <img
                     className=' h-auto object-cover'
@@ -337,7 +341,7 @@ const About = (index) => {
                     duration: 1 // Animation duration
                   }
                 }}
-
+                viewport={{ once: true }}
               >
                 {/* Left side content */}
                 <div className='w-full sm:w-[550px] p-4 sm:p-10'>
@@ -374,7 +378,7 @@ const About = (index) => {
                       duration: 1 // Animation duration
                     }
                   }}
-
+                  viewport={{ once: true }}
                 >
                   <img
                     className=' h-auto object-cover'
