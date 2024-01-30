@@ -11,7 +11,17 @@ import {
   FaGitAlt,
   FaPython,
   FaAws,
+  FaFigma,
 } from "react-icons/fa";
+import {
+  SiAdobeaftereffects,
+  SiAdobexd,
+  SiAdobeillustrator,
+  SiAdobephotoshop,
+  SiAdobepremierepro,
+  SiCanva,
+  SiWebflow,
+} from "react-icons/si";
 
 const Logoslider = () => {
   const [windowSize, setWindowSize] = useState([
@@ -33,7 +43,7 @@ const Logoslider = () => {
   return (
     <Slider
       width={windowSize[0] > 700 ? "200px" : "125px"}
-      duration={15}
+      duration={20}
       pauseOnHover={true}
       blurBorders={false}
       blurBoderColor={"#fff"}
@@ -64,6 +74,30 @@ const Logoslider = () => {
       </Slider.Slide>
       <Slider.Slide>
         <FaAws className="text-5xl" />
+      </Slider.Slide>
+      <Slider.Slide>
+        <FaFigma className="text-5xl" />
+      </Slider.Slide>
+      <Slider.Slide>
+        <SiAdobepremierepro className="text-5xl" />
+      </Slider.Slide>
+      <Slider.Slide>
+        <SiAdobephotoshop className="text-5xl" />
+      </Slider.Slide>
+      <Slider.Slide>
+        <SiAdobeillustrator className="text-5xl" />
+      </Slider.Slide>
+      <Slider.Slide>
+        <SiAdobexd className="text-5xl" />
+      </Slider.Slide>
+      <Slider.Slide>
+        <SiAdobeaftereffects className="text-5xl" />
+      </Slider.Slide>
+      <Slider.Slide>
+        <SiCanva className="text-5xl" />
+      </Slider.Slide>
+      <Slider.Slide>
+        <SiWebflow className="text-5xl" />
       </Slider.Slide>
     </Slider>
   );

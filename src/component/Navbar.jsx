@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Transition } from "@headlessui/react";
 import { Link } from "react-router-dom";
 import logo from "../assets/img/logonew.png";
@@ -6,13 +6,23 @@ import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  // const [isAbout, setAbout] = useState(false);
   const [isPopupOpen, setPopupOpen] = useState(false);
   const navigate = useNavigate();
 
+  // useEffect(() => {}, [isAbout]);
+
   const scrollToAbout = () => {
+    // console.log("about");
+    navigate("/");
+    // setAbout(true);
+
     const aboutPageElement = document.getElementById("about_page");
+    // console.log(aboutPageElement);
     if (aboutPageElement) {
       aboutPageElement.scrollIntoView({ behavior: "smooth" });
+    } else {
+      setTimeout(scrollToAbout, 100);
     }
   };
 
@@ -38,12 +48,13 @@ const Navbar = () => {
                       Home
                     </Link>
 
-                    <a
+                    <Link
                       className="mr-4 px-3 py-2 rounded-md text-sm font-medium transition-all duration-300 hover:bg-black hover:text-white"
+                      to="/"
                       onClick={scrollToAbout}
                     >
                       About
-                    </a>
+                    </Link>
 
                     <Link
                       className="mr-4 px-3 py-2 rounded-md text-sm font-medium transition-all duration-300 hover:bg-black hover:text-white"
@@ -62,7 +73,7 @@ const Navbar = () => {
 
                   <button
                     onClick={handleContact}
-                    className="bg-gray-700 text-white px-4 py-2 rounded-md text-sm font-medium ml-[45rem]"
+                    className="bg-gray-700 text-white px-4 py-2 rounded-md text-sm font-medium "
                   >
                     Contact Us
                   </button>

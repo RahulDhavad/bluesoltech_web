@@ -21,7 +21,7 @@ const Footer = () => {
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 text-sm gap-3 lg:w-2/3">
           <div className="space-y-3">
-            <h3 className="tracki uppercase dark:text-gray-50 font-bold  inline-block">
+            <h3 className="tracki uppercase dark:text-gray-800 font-bold  inline-block">
               {" "}
               QUICK LINK:
             </h3>
@@ -49,7 +49,7 @@ const Footer = () => {
             </ul>
           </div>
           <div className="space-y-3">
-            <h3 className="tracki uppercase dark:text-gray-50 font-bold inline-block">
+            <h3 className="tracki uppercase dark:text-gray-800 font-bold inline-block">
               OUR SERVICES:
             </h3>
             <ul className="space-y-1">
@@ -81,7 +81,7 @@ const Footer = () => {
             </ul>
           </div>
           <div className="space-y-3">
-            <h3 className="tracki uppercase dark:text-gray-50 font-bold inline-block">
+            <h3 className="tracki uppercase dark:text-gray-800 font-bold inline-block">
               CONTACT INFO:
             </h3>
             <ul className="space-y-1">
