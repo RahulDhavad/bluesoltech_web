@@ -104,7 +104,7 @@ const Footer = () => {
             </ul>
           </div>
           <div className="space-y-3">
-            <h3 className="tracki uppercase dark:text-gray-50 font-bold inline-block">
+            <h3 className="tracki uppercase dark:text-gray-800 font-bold inline-block">
               Social media:
             </h3>
             <div className="flex justify-start space-x-3">

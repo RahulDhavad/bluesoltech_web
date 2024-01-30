@@ -4,7 +4,7 @@ import Logoslider from "../component/Logoslider";
 import pc from "../assets/img/sa.webp";
 import About from "../component/About/About";
 
-import { motion, useScroll, useTransform } from "framer-motion";
+// import { motion, useScroll, useTransform } from "framer-motion";
 
 const Home = () => {
   const [width, setWidth] = useState(window.innerWidth);
