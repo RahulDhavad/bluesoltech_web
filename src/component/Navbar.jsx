@@ -65,9 +65,9 @@ const Navbar = () => {
 
                     <Link
                       className="mr-4 px-3 py-2 rounded-md text-sm font-medium transition-all duration-300 hover:bg-black hover:text-white"
-                      to="/team"
+                      to="/blog"
                     >
-                      Team
+                      Blog
                     </Link>
                   </div>
 
@@ -166,9 +166,9 @@ const Navbar = () => {
 
                 <Link
                   className="w-full hover:bg-gray-200 text-black block px-3 py-2 rounded-md text-base font-medium text-center"
-                  to="/team"
+                  to="/blog"
                 >
-                  Team
+                  Blog
                 </Link>
 
                 <div className="flex ">

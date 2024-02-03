@@ -420,6 +420,21 @@ const Home = () => {
       </div>
       <About />
       <Services />
+      <div className="w-full flex justify-center pb-8">
+        <div className="w-[65%] grid md:grid-cols-2">
+          <div className="text-5xl lg:text-7xl text-white p-4 h-[50vh] flex items-center text-center">
+            Let's Solve All Your DIGITAL Problems
+          </div>
+          <div className="flex flex-col justify-center items-center">
+            <h1 className="text-gray-500 md:text-2xl lg:text-4xl text-center mb-4">
+              Give us a ping!<br></br> We will contact you.
+            </h1>
+            <button className="bg-white py-1 px-3 rounded-xl focus:border-none hover:bg-gray-200">
+              Contact Us
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
